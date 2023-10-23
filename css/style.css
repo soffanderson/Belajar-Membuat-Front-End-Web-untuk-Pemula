@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+input {
+    font-family: "Open Sans", sans-serif;
+}
+
+.colorbody {
+    background-image: url("../assets/white-gray-background-with-diagonal-lines-pattern_1017-25100.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.anchor {
+    display: block;
+    height: 150px;
+    margin-top: -150px;
+    visibility: hidden;
+}
+
+input {
+    font-size: 16px;
+}
+
+.head_bar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: cornflowerblue;
+}
+
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+    background: #fff;
+}
+
+.width {
+    max-width: 800px;
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.input_section:hover {
+    border: solid rgb(185, 185, 185) 0.5px;
+}
+
+.search_section {
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.search_section:hover {
+    border: solid rgb(185, 185, 185) 0.5px;
+}
+
+.book_shelf {
+    margin: 16px 0 0 0;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+/* .book_shelf:hover {
+    border: solid rgb(185, 185, 185) 0.5px;
+} */
+
+.book_shelf > .book_list {
+    padding: 16px;
+}
+
+/* .book_list > .item:hover {
+    border: solid #bdbdbd 0.5px;
+} */
+
+.shadow {
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+        0 15px 40px rgba(166, 173, 201, 0.2);
+}
+
+.item {
+    border-radius: 16px;
+    margin-top: 16px;
+    padding: 12px 24px 12px 24px;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+
+.inner {
+    width: 60%;
+}
+.action {
+    width: auto;
+    display: flex;
+}
+
+.check-button:focus,
+.trash-button {
+    outline: none;
+}
+
+.item {
+    border-radius: 16px;
+    margin-top: 16px;
+    padding: 12px 24px 12px 24px;
+    background: white;
+    display: flex;
+    align-items: center;
+}
+
+.check-button {
+    width: 40px;
+    height: 40px;
+    background: url("../assets/circle-check-regular.svg");
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url("../assets/circle-check-solid.svg");
+    background-size: contain;
+}
+
+.trash-button {
+    width: 35px;
+    height: 40px;
+
+    background: url("../assets/trash-can-regular.svg");
+    background-size: contain;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background: url("../assets/trash-can-solid.svg");
+    background-size: contain;
+}
+
+.undo-button {
+    width: 40px;
+    height: 40px;
+    background: url("../assets/ban-solid.svg");
+    background-size: contain;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url("../assets/ban-solid.svg");
+    background-size: contain;
+    transform: rotate(90deg);
+}
+
+.check-button:focus,
+.trash-button {
+    outline: none;
+}

@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bookshelf Apps</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body class="colorbody">
+  <main class="width p-2 border my-4">
+    <div class="sticky-top">
+      <div class="text-bg-dark p-3 fw-bold rounded-top">
+        <div class="container-fluid item-center">
+          <a class="navbar-brand" href="#">
+            Aplikasi Book Shelf
+          </a>
+        </div>
+      </div>
+      <div class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <div class="navbar-nav mx-auto">
+            <a class="nav-link m-1" aria-current="page" href="#inputBuku">Masukan Buku</a>
+            <a class="nav-link m-1" href="#carikanBuku">Cari Buku</a>
+            <a class="nav-link m-1" href="#daftarBuku">Daftar Buku</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="input_section shadow mb-3 rounded-bottom">
+      <span class="anchor" id="inputBuku"></span>
+      <h2 class="text-center">Masukan Buku Baru</h2>
+      <form id="inputBook">
+        <div class="input mb-3">
+          <label for="inputBookTitle" class="form-label">Judul</label>
+          <input id="inputBookTitle" class="form-control" placeholder="Masukan nama buku.." type="text"
+            onfocus="this.value=''" required>
+        </div>
+        <div class="input mb-3">
+          <label for="inputBookAuthor" class="form-label">Penulis</label>
+          <input id="inputBookAuthor" class="form-control" placeholder="Masukan penulis buku.." type="text"
+            onfocus="this.value=''" required>
+        </div>
+        <div class="input mb-3">
+          <label for="inputBookYear" class="form-label">Tahun</label>
+          <input id="inputBookYear" class="form-control" placeholder="Masukan tahun buku.." type="number"
+            onfocus="this.value=''" required>
+        </div>
+        <div class="form-check mb-3">
+          <input id="inputBookIsComplete" type="checkbox" class="form-check-input">
+          <label for="inputBookIsComplete" class="form-check-label">Tandai selesai dibaca</label>
+        </div>
+        <button id="bookSubmit" type="submit" class="btn btn-dark" onclick="alert()">Masukan Buku</button>
+      </form>
+    </section>
+
+    <section class="shadow search_section mb-3">
+      <span class="anchor" id="carikanBuku"></span>
+      <h2 class="text-center mb-3">Cari Buku</h2>
+      <form id="searchBook" class="d-flex justify-content-between">
+        <div class="col-auto">
+          <label for="searchBookTitle" class="form-label my-1">Judul</label>
+        </div>
+        <div class="col mx-2">
+          <input id="searchBookTitle" class="form-control" type="text" onfocus="this.value=''" required>
+        </div>
+        <div class="col-auto">
+          <button id="searchSubmit" class="btn btn-dark mb-3 px-3" type="submit">Cari</button>
+        </div>
+      </form>
+    </section>
+
+
+    <div class="row">
+      <div class="col">
+        <section class="book_shelf shadow">
+          <span class="anchor" id="daftarBuku"></span>
+          <h2 class="text-center">Belum selesai dibaca</h2>
+          <div id="incompleteBookShelfList" class="book_list">
+          </div>
+        </section>
+      </div>
+      <div class="col">
+        <section class="book_shelf shadow">
+          <h2 class="text-center">Selesai dibaca</h2>
+          <div id="completeBookShelfList" class="book_list">
+          </div>
+        </section>
+      </div>
+    </div>
+
+
+
+    <div class="text-bg-dark p-3 fw-bold rounded-bottom mt-3">
+      <div class="container-fluid item-center">
+        <a class="navbar-brand" href="#" title="Creator">
+          Created by Soffan M. Hidayat
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
